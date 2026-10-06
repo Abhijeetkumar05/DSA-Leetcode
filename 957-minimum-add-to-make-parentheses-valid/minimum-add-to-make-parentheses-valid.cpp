@@ -4,9 +4,9 @@ public:
         int opened = 0, added = 0;
         for (char ch : s) {
             if (ch == '(') opened++;
-            else if (opened) opened--;  // close a pending "("
-            else added++;  // ")" with nothing to close -> add a "("
+            else if (opened) opened--;  
+            else added++;  
         }
-        return added + opened;  // still-open "(" need a ")" each
+        return added + opened;  
     }
 };
